@@ -6,9 +6,16 @@ import styles from './styles';
 const Home = (props) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.main}>
-        Home
-      </Text>
+      <View style={{width: 300, height: 300, margin: 30, backgroundColor: 'lightgrey'}} />
+      <Button
+        style={{width: 30}}
+        text="Feed"
+        onPress={props.onDetailsPress}
+      />
+      <Button
+        text="Clearn"
+        onPress={props.onDetailsPress}
+      />
       <Button
         text="Details"
         onPress={props.onDetailsPress}
