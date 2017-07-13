@@ -8,6 +8,9 @@ export default StyleSheet.create({
     alignItems: 'center',
     backgroundColor: colors.background,
   },
+  buttonContainer: {
+    width: 105
+  },
   main: {
     fontSize: 20,
     textAlign: 'center',

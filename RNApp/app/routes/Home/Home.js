@@ -10,21 +10,26 @@ const Home = (props) => {
       <View style={{
         flex: 1,
         flexDirection: 'row',
-        justifyContent: 'space-around',
         alignItems: 'center'
       }}>
-        <Button
-          text="Feed"
-          onPress={props.onDetailsPress}
-        />
-        <Button
-          text="Clearn"
-          onPress={props.onDetailsPress}
-        />
-        <Button
-          text="Play"
-          onPress={props.onDetailsPress}
-        />
+        <View style={styles.buttonContainer} >
+          <Button
+            text="Feed"
+            onPress={props.onDetailsPress}
+          />
+        </View>
+        <View style={styles.buttonContainer} >
+          <Button
+            text="Clean"
+            onPress={props.onDetailsPress}
+          />
+        </View>
+        <View style={styles.buttonContainer} >
+          <Button
+            text="Play"
+            onPress={props.onDetailsPress}
+          />
+        </View>
       </View>
     </View>
   );
