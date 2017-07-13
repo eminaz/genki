@@ -1,4 +1,5 @@
 import Details from '/lib/collections/details';
+import Pets from '/lib/collections/pets';
 
 const seed = () => {
   if (Details.find().count() === 0) {
@@ -7,6 +8,20 @@ const seed = () => {
         name: `Detail #${i}`
       });
     }
+  }
+  if (Pets.find().count() === 0) {
+    Pets.insert({
+      name: `stoli 1`,
+      image: `knighttchi-rel.png`
+    });
+    Pets.insert({
+      name: `stoli 2`,
+      image: `mametchi-rel.png`
+    });
+    Pets.insert({
+      name: `stoli 3`,
+      image: `spaceytchi-rel.png`
+    });
   }
 }
 

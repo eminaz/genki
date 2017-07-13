@@ -3,6 +3,7 @@ import Meteor, { createContainer } from 'react-native-meteor';
 
 import LoggedOut from './layouts/LoggedOut';
 import LoggedIn from './layouts/LoggedIn';
+import ChoosePet from './layouts/ChoosePet';
 import Loading from './components/Loading';
 import settings from './config/settings';
 
@@ -14,10 +15,12 @@ const RNApp = class extends React.Component {
      console.disableYellowBox = true;
   }
   render() {
-    const { status, user, loggingIn } = this.props;
+    const {status, user, loggingIn} = this.props;
 
     if (status.connected === false || loggingIn) {
       return <Loading />;
+    } else if (user !== null && firstTimeUser) {
+      return <ChoosePet />;
     } else if (user !== null) {
       return <LoggedIn />;
     }

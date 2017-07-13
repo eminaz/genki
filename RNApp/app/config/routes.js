@@ -3,6 +3,7 @@ import Home from '../routes/Home';
 import Details from '../routes/Details';
 import Profile from '../routes/Profile';
 import SignIn from '../routes/SignIn';
+import ChoosePet from '../routes/ChoosePet';
 
 export const routes = {
   getHomeRoute() {
@@ -40,6 +41,19 @@ export const routes = {
     return {
       renderScene(navigator) {
         return <SignIn navigator={navigator} />;
+      },
+
+      showNavigationBar: false,
+    };
+  },
+  getChoosePetRoute() {
+    return {
+      renderScene(navigator) {
+        return <ChoosePet navigator={navigator} />;
+      },
+
+      getTitle() {
+        return 'Choose Your Pet';
       },
 
       showNavigationBar: false,
