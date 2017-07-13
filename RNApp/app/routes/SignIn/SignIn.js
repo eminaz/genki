@@ -17,8 +17,8 @@ const SignIn = (props) => {
           source={images.logo}
         />
 
-        <Text style={styles.headerText}>React Native Meteor</Text>
-        <Text style={styles.subHeaderText}>Boilerplate</Text>
+        <Text style={styles.headerText}>Genki </Text>
+        <Text style={styles.subHeaderText}>Take care of your heart, with your heart</Text>
       </View>
 
       <InputWrapper>
