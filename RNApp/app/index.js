@@ -11,6 +11,7 @@ Meteor.connect(settings.METEOR_URL);
 const RNApp = class extends React.Component {
   componentDidMount() {
      Meteor.loginWithPassword('a@a.com', '11111111');
+     console.disableYellowBox = true;
   }
   render() {
     const { status, user, loggingIn } = this.props;
