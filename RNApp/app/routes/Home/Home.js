@@ -2,11 +2,13 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import Button from '../../components/Button';
 import styles from './styles';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Home = (props) => {
   return (
     <View style={styles.container}>
-      <View style={{width: 300, height: 300, margin: 10, marginTop: 120, backgroundColor: 'lightgrey'}} />
+      <Icon name="coin" size={40} color="orange" style={styles.coinIcon} />
+      <View style={{width: 300, height: 300, margin: 10, marginTop: 20, backgroundColor: 'lightgrey'}} />
       <View style={{
         flex: 1,
         flexDirection: 'row',

@@ -11,6 +11,11 @@ export default StyleSheet.create({
   buttonContainer: {
     width: 105
   },
+  coinIcon: {
+    alignSelf: 'flex-end',
+    margin: 30,
+    marginBottom: 0
+  },
   main: {
     fontSize: 20,
     textAlign: 'center',
