@@ -8,15 +8,20 @@ import settings from './config/settings';
 
 Meteor.connect(settings.METEOR_URL);
 
-const RNApp = (props) => {
-  const { status, user, loggingIn } = props;
-
-  if (status.connected === false || loggingIn) {
-    return <Loading />;
-  } else if (user !== null) {
-    return <LoggedIn />;
+const RNApp = class extends React.Component {
+  componentDidMount() {
+     Meteor.loginWithPassword('a@a.com', '11111111');
   }
-  return <LoggedOut />;
+  render() {
+    const { status, user, loggingIn } = this.props;
+
+    if (status.connected === false || loggingIn) {
+      return <Loading />;
+    } else if (user !== null) {
+      return <LoggedIn />;
+    }
+    return <LoggedOut />;
+  }
 };
 
 RNApp.propTypes = {
