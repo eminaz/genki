@@ -25,10 +25,17 @@ export default createContainer(() => {
     feed: () => {
       if (Meteor.collection('pet_states').findOne()) {
         Meteor.collection('pet_states').update(Meteor.userId(), {
-          $set: {'hungry': false}
+          $set: {'hungry': false, 'eating': true}
         }, (err, result) => {
           console.log(err, result);
         });
+        setTimeout( () => {
+          Meteor.collection('pet_states').update(Meteor.userId(), {
+            $set: {'eating': false}
+          }, (err, result) => {
+            console.log(err, result);
+          });
+        }, 3000);
       }
       else {
         Meteor.collection('pet_states').insert({_id: Meteor.userId()});
