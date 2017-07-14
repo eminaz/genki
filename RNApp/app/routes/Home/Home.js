@@ -6,10 +6,11 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Pet from './Pet'
 
 const Home = (props) => {
+  const { feed, user } = props;
   return (
     <View style={styles.container}>
       <Icon name="coin" size={40} color="orange" style={styles.coinIcon} />
-      <Pet />
+      <Pet {...props} />
       <View style={{
         flex: 1,
         flexDirection: 'row',
@@ -18,19 +19,19 @@ const Home = (props) => {
         <View style={styles.buttonContainer} >
           <Button
             text="Feed"
-            onPress={props.onDetailsPress}
+            onPress={props.feed}
           />
         </View>
         <View style={styles.buttonContainer} >
           <Button
             text="Clean"
-            onPress={props.onDetailsPress}
+            onPress={props.clean}
           />
         </View>
         <View style={styles.buttonContainer} >
           <Button
             text="Play"
-            onPress={props.onDetailsPress}
+            onPress={props.play}
           />
         </View>
       </View>

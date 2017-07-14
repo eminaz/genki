@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, Image } from 'react-native';
 import images from './images';
 
-const Component = () => {
+const Component = (props) => {
   return (
     <View style={{
       justifyContent: 'center',
