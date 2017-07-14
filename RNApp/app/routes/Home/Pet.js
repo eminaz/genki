@@ -6,7 +6,10 @@ const getImageSource = (pet) => {
   if (pet.eating) {
     return images.eating;
   }
-  else if (pet.hungry || pet.dirty || pet.bored) {
+  else if(pet.dirty) {
+    return images.poop;
+  }
+  else if (pet.hungry || pet.bored) {
     return images.sad;
   }
   else {

@@ -1,17 +1,24 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
 import Button from '../../components/Button';
 import styles from './styles';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+//import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Badge from 'react-native-smart-badge'
 import Pet from './Pet'
+import images from './images';
 
 const Home = (props) => {
   const { feed, user } = props;
   return (
     <View style={styles.container}>
+      {
+        //<Image source={images.background} style={styles.backgroundImage} />  
+      }
+
       <View style={styles.coinIcon}>
-        <Icon name="coin" size={40} color="orange" />
+        {
+        //<Icon name="coin" size={40} color="orange" />
+        }
         <Badge textStyle={{fontSize: 16, paddingTop: 7, paddingBottom: 7}}
           style={{backgroundColor: 'orange', marginBottom: 3}}>
             {user.profile.coins || ''}
