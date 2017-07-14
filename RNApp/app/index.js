@@ -19,8 +19,6 @@ const RNApp = class extends React.Component {
 
     if (status.connected === false || loggingIn) {
       return <Loading />;
-    } else if (user !== null && firstTimeUser) {
-      return <ChoosePet />;
     } else if (user !== null) {
       return <LoggedIn />;
     }

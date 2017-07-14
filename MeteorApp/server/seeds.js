@@ -12,15 +12,18 @@ const seed = () => {
   if (Pets.find().count() === 0) {
     Pets.insert({
       name: `stoli 1`,
-      image: `knighttchi-rel.png`
+      image: `https://s3-us-west-2.amazonaws.com/genki.ihealthnext.com/pets/knighttchi-rel.png`,
+      selected: false
     });
     Pets.insert({
       name: `stoli 2`,
-      image: `mametchi-rel.png`
+      image: `https://s3-us-west-2.amazonaws.com/genki.ihealthnext.com/pets/mametchi-rel.png`,
+      selected: false
     });
     Pets.insert({
       name: `stoli 3`,
-      image: `spaceytchi-rel.png`
+      image: `https://s3-us-west-2.amazonaws.com/genki.ihealthnext.com/pets/spaceytchi-rel.png`,
+      selected: false
     });
   }
 }

@@ -9,6 +9,7 @@
   "dependencies": {
     "@exponent/react-native-navigator": "^0.4.7",
     "gravatar-api": "^1.4.0",
+    "lodash": "^4.17.4",
     "react": "^15.4.2",
     "react-native": "^0.41.2",
     "react-native-keyboard-spacer": "^0.3.0",

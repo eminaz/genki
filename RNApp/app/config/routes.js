@@ -3,7 +3,7 @@ import Home from '../routes/Home';
 import Details from '../routes/Details';
 import Profile from '../routes/Profile';
 import SignIn from '../routes/SignIn';
-import ChoosePet from '../routes/ChoosePet';
+import ChoosePet from '../layouts/ChoosePet';
 
 export const routes = {
   getHomeRoute() {
@@ -52,13 +52,10 @@ export const routes = {
         return <ChoosePet navigator={navigator} />;
       },
 
-      getTitle() {
-        return 'Choose Your Pet';
-      },
-
       showNavigationBar: false,
     };
   },
+
 };
 
 export default routes;

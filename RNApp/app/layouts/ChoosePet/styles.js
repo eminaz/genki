@@ -11,6 +11,12 @@ export default StyleSheet.create({
     backgroundColor: colors.background,
   },
   list: {},
+  pickedItem: {
+    backgroundColor: colors.pickedBackground,
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: 700
+  },
   item: {
     backgroundColor: colors.buttonBackground,
     width: cardSize,
@@ -21,7 +27,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   itemText: {
-    fontSize: 16,
+    fontSize: 8,
     fontWeight: '500',
     textAlign: 'center',
     color: colors.buttonText,
@@ -31,5 +37,10 @@ export default StyleSheet.create({
     width: 125,
     height: 125,
   },
+  pickedImage: {
+    alignItems: 'center',
+    width: 325,
+    height: 325,
+  }
 
 });

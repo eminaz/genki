@@ -6,4 +6,5 @@ export const colors = {
   buttonText: '#FFFFFF',
   inputBackground: '#FFFFFF',
   inputDivider: '#E4E2E5',
+  pickedBackground: '#E4E2E5'
 };
