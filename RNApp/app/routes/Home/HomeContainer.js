@@ -18,6 +18,11 @@ HomeContainer.propTypes = {
 
 export default createContainer(() => {
   const handle = Meteor.subscribe('pet-states');
+  const decreaseCoin = () => {
+    Meteor.collection('users').update(Meteor.userId(), {
+      $inc: {'profile.coins': -1}
+    });
+  };
   return {
     user: Meteor.user(),
     petStatesReady: handle.ready(),
@@ -29,6 +34,7 @@ export default createContainer(() => {
         }, (err, result) => {
           console.log(err, result);
         });
+        decreaseCoin();
         setTimeout( () => {
           Meteor.collection('pet_states').update(Meteor.userId(), {
             $set: {'eating': false}
@@ -48,6 +54,7 @@ export default createContainer(() => {
         }, (err, result) => {
           console.log(err, result);
         });
+        decreaseCoin();
       }
     },
     play: () => {
@@ -57,6 +64,7 @@ export default createContainer(() => {
         }, (err, result) => {
           console.log(err, result);
         });
+        decreaseCoin();
       }
     },
     getHungry: () => {

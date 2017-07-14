@@ -3,5 +3,5 @@ import PetStates from './petStates';
 
 export {
   Details,
-  PetStates
+  PetStates,
 };

@@ -14,7 +14,7 @@ const Home = (props) => {
         <Icon name="coin" size={40} color="orange" />
         <Badge textStyle={{fontSize: 16, paddingTop: 7, paddingBottom: 7}}
           style={{backgroundColor: 'orange', marginBottom: 3}}>
-            77
+            {user.profile.coins || ''}
         </Badge>
       </View>
       <Pet {...props} />
