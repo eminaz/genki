@@ -14,7 +14,7 @@ const RNApp = class extends React.Component {
      console.disableYellowBox = true;
   }
   render() {
-    const { status, user, loggingIn } = this.props;
+    const {status, user, loggingIn} = this.props;
 
     if (status.connected === false || loggingIn) {
       return <Loading />;

@@ -5,6 +5,7 @@ const images = {
   icons: {
     home: require('../images/home-icon.png'),
     profile: require('../images/user-icon.png'),
+    choosePet: require('../images/choosepet-icon.png'),
   },
   profileHeader: require('../images/header-image.png'),
   avatarPlaceholder: require('../images/avatar-placeholder.png'),
