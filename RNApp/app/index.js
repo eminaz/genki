@@ -3,7 +3,6 @@ import Meteor, { createContainer } from 'react-native-meteor';
 
 import LoggedOut from './layouts/LoggedOut';
 import LoggedIn from './layouts/LoggedIn';
-import ChoosePet from './layouts/ChoosePet';
 import Loading from './components/Loading';
 import settings from './config/settings';
 

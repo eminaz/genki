@@ -3,7 +3,7 @@ import Home from '../routes/Home';
 import Details from '../routes/Details';
 import Profile from '../routes/Profile';
 import SignIn from '../routes/SignIn';
-import ChoosePet from '../layouts/ChoosePet';
+import ChoosePet from '../layouts/ChoosePet/ChoosePetContainer.js';
 
 export const routes = {
   getHomeRoute() {
