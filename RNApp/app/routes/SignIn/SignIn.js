@@ -18,7 +18,7 @@ const SignIn = (props) => {
         />
 
         <Text style={styles.headerText}>Genki </Text>
-        <Text style={styles.subHeaderText}>Take care of your heart, with your heart</Text>
+        <Text style={styles.subHeaderText}>Use Your Heart, To Improve Your Heart</Text>
       </View>
 
       <InputWrapper>
