@@ -3,12 +3,13 @@ import { Text, View } from 'react-native';
 import Button from '../../components/Button';
 import styles from './styles';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Pet from './Pet'
 
 const Home = (props) => {
   return (
     <View style={styles.container}>
       <Icon name="coin" size={40} color="orange" style={styles.coinIcon} />
-      <View style={{width: 300, height: 300, margin: 10, marginTop: 20, backgroundColor: 'lightgrey'}} />
+      <Pet />
       <View style={{
         flex: 1,
         flexDirection: 'row',
