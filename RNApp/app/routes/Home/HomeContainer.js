@@ -21,6 +21,7 @@ export default createContainer(() => {
   return {
     user: Meteor.user(),
     petStatesReady: handle.ready(),
+    pet: Meteor.collection('pet_states').findOne({_id: Meteor.userId()}) || {},
     feed: () => {
       if (Meteor.collection('pet_states').findOne()) {
         Meteor.collection('pet_states').update(Meteor.userId(), {
