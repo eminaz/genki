@@ -7,7 +7,7 @@ import { capitalize } from '../../lib/string';
 import styles from './styles';
 
 const Profile = (props) => {
-  const { user, signOut } = props;
+  const { user, signOut, takeMeasurement } = props;
   let email;
 
   if (user) {
@@ -20,7 +20,8 @@ const Profile = (props) => {
       <View style={styles.body}>
         <Avatar email={email} />
         <Text>{capitalize(email)}</Text>
-        <Button text="Sign Out" onPress={signOut} />
+        <Button text="+ Take Measurement" onPress={takeMeasurement} />
+        <Button styles={styles.signOut} text="Sign Out" onPress={signOut} />
       </View>
     </View>
   );

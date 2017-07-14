@@ -24,7 +24,10 @@ export default StyleSheet.create({
   },
   header: {
     marginBottom: 25,
-    alignItems: 'center',
+    alignItems: 'center'
+  },
+  signOut: {
+    alignSelf: 'flex-end'
   },
   logo: {
     width: 125,

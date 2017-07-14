@@ -6,15 +6,17 @@ class ProfileContainer extends Component {
   handleSignOut() {
     Meteor.logout();
   }
-
+  takeMeasurement() {
+    console.log('------ take measurement!');
+  }
   render() {
     const { user } = this.props;
 
     return (
       <Profile
         user={user}
-        signOut={this.handleSignOut.bind(this)}
-      />
+        takeMeasurement={this.takeMeasurement.bind(this)}
+        signOut={this.handleSignOut.bind(this)} />
     );
   }
 }
