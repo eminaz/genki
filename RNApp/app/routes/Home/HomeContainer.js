@@ -50,6 +50,27 @@ export default createContainer(() => {
           console.log(err, result);
         });
       }
+    },
+    getHungry: () => {
+      Meteor.collection('pet_states').update(Meteor.userId(), {
+        $set: {'hungry': true}
+      }, (err, result) => {
+        console.log(err, result);
+      });
+    },
+    poop: () => {
+      Meteor.collection('pet_states').update(Meteor.userId(), {
+        $set: {'dirty': true}
+      }, (err, result) => {
+        console.log(err, result);
+      });
+    },
+    feelBored: () => {
+      Meteor.collection('pet_states').update(Meteor.userId(), {
+        $set: {'bored': true}
+      }, (err, result) => {
+        console.log(err, result);
+      });
     }
   };
 }, HomeContainer);

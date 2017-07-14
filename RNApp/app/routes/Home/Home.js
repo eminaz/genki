@@ -35,6 +35,32 @@ const Home = (props) => {
           />
         </View>
       </View>
+
+      <View style={{
+        marginTop: 20,
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center'
+      }}>
+        <View style={styles.buttonContainer} >
+          <Button
+            text="Hungry"
+            onPress={props.getHungry}
+          />
+        </View>
+        <View style={styles.buttonContainer} >
+          <Button
+            text="Poop"
+            onPress={props.poop}
+          />
+        </View>
+        <View style={styles.buttonContainer} >
+          <Button
+            text="Bored"
+            onPress={props.feelBored}
+          />
+        </View>
+      </View>
     </View>
   );
 };
