@@ -13,8 +13,12 @@ export default StyleSheet.create({
   },
   coinIcon: {
     alignSelf: 'flex-end',
-    margin: 30,
-    marginBottom: 0
+    margin: 38,
+    marginBottom: 5,
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   main: {
     fontSize: 20,
